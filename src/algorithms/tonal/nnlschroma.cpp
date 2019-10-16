@@ -310,8 +310,7 @@ void NNLSChroma::compute() {
           }
         }
 
-        nnls(curr_dict, nNote, nNote, signifIndex.size(), b, x, &rnorm, w, zz,
-             indx, &mode);
+        //nnls(curr_dict, nNote, nNote, signifIndex.size(), b, x, &rnorm, w, zz, indx, &mode);
         delete[] curr_dict;
 
         for (int iNote = 0; iNote < (int)signifIndex.size(); ++iNote) {
